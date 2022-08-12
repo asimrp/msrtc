@@ -77,8 +77,6 @@ if __name__ == "__main__":
     endPoint = QgsPointXY(557714, 2360914)
     shortestRoute = ShortestPathExample(routes, startPoint, endPoint)
     print("start:")
-    import pdb
-    pdb.set_trace()
     for point in shortestRoute:
         print(" --> POINT(%d, %d)" % (point.x(), point.y()))
     print("end.")
